@@ -34,6 +34,10 @@ can use the `linode` commands without specifying this as an argument each time.
 
 ## Release History
 
+### 0.1.1
+
+* Fixes shebang line
+
 ### 0.1.0
 
 * First release
