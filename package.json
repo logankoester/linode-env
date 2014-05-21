@@ -1,0 +1,26 @@
+{
+  "name": "linode-env",
+  "version": "0.0.0",
+  "description": "Easily switch configs for the Linode CLI",
+  "main": "index.js",
+  "bin": {
+    "linode-env": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/logankoester/linode-env.git"
+  },
+  "keywords": [
+    "linode"
+  ],
+  "author": "Logan Koester",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/logankoester/linode-env/issues"
+  },
+  "homepage": "https://github.com/logankoester/linode-env",
+  "dependencies": {
+    "commander": "^2.2.0",
+    "lodash": "^2.4.1"
+  }
+}
