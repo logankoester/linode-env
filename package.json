@@ -1,6 +1,6 @@
 {
   "name": "linode-env",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Easily switch configs for the Linode CLI",
   "main": "index.js",
   "bin": {

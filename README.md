@@ -9,9 +9,8 @@
 
 ## Getting Started
 
-If you have a file called "config" under `~/.linodecli`, rename it - or it will be clobbered by the symlink.
-
-You can create additional named configurations using `$ linode configure -u [username]`
+If you have a file called `~/.linode-cli`, rename it - or it will be clobbered by the symlink.
+Create a directory called `~/.linode-cli-env`.
 
 ```shell
 npm install linode-env -g
@@ -29,10 +28,14 @@ $ linode-env -h
     -l, --list        List the available Linode configs
 ```
 
-This script will simply set the file symlinked to `~/.linodecli/config` so you
-can use the `linode` commands without specifying this as an argument each time.
+This script will simply set the file symlinked to `~/.linode-cli` so you
+can use the `linode-cli` commands without specifying this as an argument each time.
 
 ## Release History
+
+### 1.0.0
+
+* Updates for linode-cli v2
 
 ### 0.1.1
 

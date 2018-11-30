@@ -7,7 +7,8 @@ var pkg = JSON.parse(
     fs.readFileSync(
       path.join(__dirname, 'package.json'), 'utf8'));
 
-var configDir = path.join(process.env.HOME, '.linodecli');
+var configDir = path.join(process.env.HOME, '.linode-cli-env');
+var configFile = path.join(process.env.HOME, '.linode-cli');
 
 function list() {
   return _.without(
@@ -17,12 +18,12 @@ function list() {
 
 function use(config) {
   fs.unlink(
-      path.join(configDir, 'config'),
+      configFile,
         function(err) {
           if (err) console.warn(err);
           fs.symlink(
             path.join(configDir, config),
-            path.join(configDir, 'config'),
+            configFile,
             function(err) {
               if (err) console.warn(err);
             });
